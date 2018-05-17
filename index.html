@@ -45,43 +45,41 @@
 
         </div>
         <div class="card">
-            <p>How to convert binary to decimal</p>
-            <p>All binary numbers have positionings but with binary numbers the positionings goes from right to left instead of left to right starting at zero with decimal.
+            <h2>How to convert binary to decimal</h2>
+            <p>All binary numbers have positionings but with binary numbers the positionings starts from right to left instead of left to right starting at zero with decimal.
             </p>
             <p>To convert a positive binary number to a decimal 2 is powered by the positioning then times by that binary value. We then move to the next binary position and
                its value and repeat the first process adding together each time until we have reached the the total length of the binary number</p>
             <P>For example converting 1010 to decimal</p>
-            <tr>
-              <td>position</td>
-              <td>Binary number</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <p>Step one</p>
-            <p>2 to the power of the position of last binary number times by the binary number position value. The position being 3 and the binary value being 1. So it would
+            <table>
+              <tr>
+                <td>position</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>binary number</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+
+            </table>
+
+            <p><span class="bold">Step one</span><br>
+            2 to the power of the position of last binary number times by the binary number position value. The position being 3 and the binary value being 1. So it would
               look like (2^3 * 1) this is the binary number 1000 into decimal.</p>
-            <p>Step two</p>
-            <p>Repeat step one but with the next binary number position and its value, which the position being 2 and the binary number position value being 0. So it should look like (2^2 * 0) this is the binary number of 000 into decimal. </p>
-            <p>Step three</p>
-            <p>The position being 1 and its value being 1 should look like this, (2^1 * 1) this is the binary number of 10 into decimal</p>
-            <p>Step four</p>
-            <p>The position being 0 and its value being 0 should look like this, (2^1 * 0) this is the binary number of 0 into decimal</p>
-            <p>Step five</p>
-            <p>We then add all those together, (2^3 * 1) + (2^2 * 0) + (2^1 * 1) + (2^0* 0) which equals 10. You can check this with my converter up above. 
+            <p><span class="bold">Step two</span><br>
+            Repeat step one but with the next binary number position and its value, which the position being 2 and the binary number position value being 0. So it should look like (2^2 * 0) this is the binary number of 000 into decimal. </p>
+            <p><span class="bold">Step three</span><br>
+            The position being 1 and its value being 1 should look like this, (2^1 * 1) this is the binary number of 10 into decimal</p>
+            <p><span class="bold">Step four</span><br>
+            The position being 0 and its value being 0 should look like this, (2^1 * 0) this is the binary number of 0 into decimal</p>
+            <p><span class="bold">Step five</span><br>
+            We then add all those together, (2^3 * 1) + (2^2 * 0) + (2^1 * 1) + (2^0* 0) which equals 10. You can check this with my converter up above.
               (2^3 * 1) + (2^2 * 0) + (2^1 * 1) + (2^0* 0) = 10</p>
 
         </div>
