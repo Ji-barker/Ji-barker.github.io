@@ -7,11 +7,12 @@ body {
     font-family: 'Fira Sans', sans-serif;
     padding: 10px;
     background: #f1f1f1;
+    font-size: 30px;
 }
 
 /* Header/Blog Title */
 .header {
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     background: white;
 }
