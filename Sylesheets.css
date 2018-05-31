@@ -58,6 +58,7 @@ body {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+    box-shadow: 2px 2px 5px grey;
 }
 
 /* Clear floats after the columns */
