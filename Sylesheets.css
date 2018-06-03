@@ -81,6 +81,8 @@ table, tr, td {
     text-align: center;
     background: #ddd;
     margin-top: 20px;
+    font-size: small;
+    text-align: left;
 }
 .leftcolumn{
     text-align: center;
