@@ -45,7 +45,7 @@ function pos_binary_to_decimal(binary_number) {
     }
     return decimal_number
 }
-//this is the function for converting 
+//this is the function for converting
 function neg_binary_to_decimal(binary_number) {
     var decimal_number = 0;
     var i;

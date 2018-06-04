@@ -1,100 +1,100 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <script src="javaScript.js"></script>
-    <link rel="stylesheet" type="text/css" href="Sylesheets.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-    <title>Project</title>
-</head>
-<body>
+  <head>
+      <script src="javaScript.js"></script>
+      <link rel="stylesheet" type="text/css" href="Sylesheets.css">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+      <title>Project</title>
+  </head>
+  <body>
 
-<div class="header">
-  <h1>Binary converter</h1>
-</div>
-
-<div class="topnav">
-  <a href="#">one's and two's complement</a>
-  <a href="#">Binary calculator</a>
-  <a href="#">Link</a>
-  <a href="#" style="float:right">Contact</a>
-</div>
-
-<div class="row">
-    <div>
-        <div class="card">
-            <div class="leftcolumn">
-                <h2>Binary to decimal</h2>
-                <h5>Enter binary number(eg.1010.101, no spaces, no letters)</h5>
-                <div id="bin_to_dec_body">
-                    <p><input type="text" id="num1"></p>
-                    <button type="button" onclick="converter()">converter</button>
-                    <p id="yeah"></p>
-                </div>
-
-            </div>
-            <div class="rightcolumn">
-                <h2>Decimal to binary</h2>
-                <h5>Enter a decimal number</h5>
-                <div id="dec_to_bin_body">
-                    <p><input title="num2" type="text" id="num2"></p>
-                    <button type="button" onclick="converter1()">Converter</button>
-                    <p id="output2"></p>
-                </div>
-            </div>
-
-        </div>
-        <div class="card">
-            <h2>How to convert binary to decimal</h2>
-            <p>All binary numbers have positionings but with binary numbers the positionings starts from right to left instead of left to right starting at zero with decimal.
-            </p>
-            <p>To convert a positive binary number to a decimal 2 is powered by the positioning then times by that binary value. We then move to the next binary position and
-               its value and repeat the first process adding together each time until we have reached the the total length of the binary number</p>
-            <P>For example converting 1010 to decimal</p>
-            <table>
-              <tr>
-                <td>position</td>
-                <td>3</td>
-                <td>2</td>
-                <td>1</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>binary number</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-              </tr>
-
-            </table>
-
-            <p><span class="bold">Step one</span><br>
-            2 to the power of the position of last binary number times by the binary number position value. The position being 3 and the binary value being 1. So it would
-              look like (2^3 * 1) this is the binary number 1000 into decimal.</p>
-            <p><span class="bold">Step two</span><br>
-            Repeat step one but with the next binary number position and its value, which the position being 2 and the binary number position value being 0. So it should look like (2^2 * 0) this is the binary number of 000 into decimal. </p>
-            <p><span class="bold">Step three</span><br>
-            The position being 1 and its value being 1 should look like this, (2^1 * 1) this is the binary number of 10 into decimal</p>
-            <p><span class="bold">Step four</span><br>
-            The position being 0 and its value being 0 should look like this, (2^1 * 0) this is the binary number of 0 into decimal</p>
-            <p><span class="bold">Step five</span><br>
-            We then add all those together, (2^3 * 1) + (2^2 * 0) + (2^1 * 1) + (2^0* 0) which equals 10. You can check this with my converter up above.
-              (2^3 * 1) + (2^2 * 0) + (2^1 * 1) + (2^0* 0) = 10</p>
-
-        </div>
+    <div class="header">
+      <h1>Binary converter</h1>
     </div>
-</div>
+    <!--this is the links at top of page-->
+    <div class="topnav">
+      <a href="#">one's and two's complement</a>
+      <a href="#">Binary calculator</a>
+      <a href="#">Link</a>
+      <a href="#" style="float:right">Contact</a>
+    </div>
 
-<div class="footer">
-  <ul>
-    <li>one's and two's complement</li>
-    <li>Binary calculator<li>
-    <li>link</li>
-    <li>Contact</li>
-  </ul>
+    <div class="row">
 
-</div>
+          <div class="card">
+              <div class="leftcolumn">
+                  <h2>Binary to decimal</h2>
+                  <h5>Enter binary number(eg.1010.101, no spaces, no letters)</h5>
+                  <div id="bin_to_dec_body">
+                      <p><input type="text" id="num1"></p>
+                      <button type="button" onclick="converter()">converter</button>
+                      <p id="yeah"></p>
+                  </div>
 
-</body>
+              </div>
+              <div class="rightcolumn">
+                  <h2>Decimal to binary</h2>
+                  <h5>Enter a decimal number</h5>
+                  <div id="dec_to_bin_body">
+                      <p><input title="num2" type="text" id="num2"></p>
+                      <button type="button" onclick="converter1()">Converter</button>
+                      <p id="output2"></p>
+                  </div>
+              </div>
+
+          </div>
+          <div class="card">
+              <h2>How to convert binary to decimal</h2>
+              <p>All binary numbers have positionings but with binary numbers the positionings starts from right to left instead of left to right starting at zero with decimal.
+              </p>
+              <p>To convert a positive binary number to a decimal 2 is powered by the positioning then times by that binary value. We then move to the next binary position and
+                 its value and repeat the first process adding together each time until we have reached the the total length of the binary number</p>
+              <P>For example converting 1010 to decimal</p>
+              <table>
+                <tr>
+                  <td>position</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>binary number</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+
+              </table>
+
+              <p><span class="bold">Step one</span><br>
+              2 to the power of the position of last binary number times by the binary number position value. The position being 3 and the binary value being 1. So it would
+                look like (2^3 * 1) this is the binary number 1000 into decimal.</p>
+              <p><span class="bold">Step two</span><br>
+              Repeat step one but with the next binary number position and its value, which the position being 2 and the binary number position value being 0. So it should look like (2^2 * 0) this is the binary number of 000 into decimal. </p>
+              <p><span class="bold">Step three</span><br>
+              The position being 1 and its value being 1 should look like this, (2^1 * 1) this is the binary number of 10 into decimal</p>
+              <p><span class="bold">Step four</span><br>
+              The position being 0 and its value being 0 should look like this, (2^1 * 0) this is the binary number of 0 into decimal</p>
+              <p><span class="bold">Step five</span><br>
+              We then add all those together, (2^3 * 1) + (2^2 * 0) + (2^1 * 1) + (2^0* 0) which equals 10. You can check this with my converter up above.
+                (2^3 * 1) + (2^2 * 0) + (2^1 * 1) + (2^0* 0) = 10</p>
+
+          </div>
+
+        </div>
+  <!--This is the footer with links-->
+    <div class="footer">
+      <ul>
+        <li>one's and two's complement</li>
+        <li>Binary calculator<li>
+        <li>link</li>
+        <li>Contact</li>
+      </ul>
+
+    </div>
+
+  </body>
 </html>

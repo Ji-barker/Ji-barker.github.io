@@ -42,17 +42,6 @@ body {
     color: black;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-
-
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-
 /* Add a card effect for articles */
 .card {
     background-color: white;
