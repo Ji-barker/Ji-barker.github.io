@@ -56,6 +56,7 @@ body {
     display: table;
     clear: both;
 }
+/*Tables*/
 table, tr, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -63,6 +64,12 @@ table, tr, td {
     font-size: 17px;
     font-weight: bolder;
     margin-left: 100px;
+}
+.yellow{
+  background-color: #fff138;
+}
+.blue{
+  background-color: #37f5ff; 
 }
 /* Footer */
 .footer {
