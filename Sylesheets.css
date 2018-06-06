@@ -45,7 +45,7 @@ body {
 /* Add a card effect for articles */
 .card {
     background-color: white;
-    padding: 20px;
+    padding: 100px;
     margin-top: 20px;
     box-shadow: 2px 2px 5px grey;
 }
@@ -69,7 +69,10 @@ table, tr, td {
   background-color: #fff138;
 }
 .blue{
-  background-color: #37f5ff; 
+  background-color: #37f5ff;
+}
+h2{
+  border-bottom: 5px solid RGB(38 39 38);
 }
 /* Footer */
 .footer {
