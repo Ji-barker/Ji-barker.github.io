@@ -7,6 +7,7 @@ body {
     /*font-family: 'Fira Sans', sans-serif;*/
     padding: 10px;
     background: #f1f1f1;
+    width: 100%;
 }
 
 /* Header/Blog Title */
@@ -106,7 +107,11 @@ table, tr, td {
         float: none;
         width: 100%;
     }
-    html{
-      width: 100%;
+    body{
+      padding: 5px;
     }
+    table{
+      padding: 6px;
+    }
+
 }
