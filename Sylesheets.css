@@ -72,7 +72,7 @@ table, tr, td {
   background-color: #37f5ff;
 }
 .subheading{
-  border-bottom: 5px solid rgb(38, 39, 38);
+  border-bottom: 5px solid #333;
 }
 /* Footer */
 .footer {
