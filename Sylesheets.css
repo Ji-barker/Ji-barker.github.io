@@ -7,7 +7,6 @@ body {
     /*font-family: 'Fira Sans', sans-serif;*/
     padding: 10px;
     background: #f1f1f1;
-    width: auto;
 }
 
 /* Header/Blog Title */
@@ -106,5 +105,8 @@ table, tr, td {
     .topnav a {
         float: none;
         width: 100%;
+    }
+    html{
+      width: 100%;
     }
 }
