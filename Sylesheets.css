@@ -72,7 +72,7 @@ table, tr, td {
   background-color: #37f5ff;
 }
 .subheading{
-  border-bottom: 5px solid RGB(38 39 38);
+  border-bottom: 5px solid rgba(38 39 38);
 }
 /* Footer */
 .footer {
@@ -86,7 +86,8 @@ table, tr, td {
     text-decoration: none;
 }
 .column{
-    text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
 .bold{
