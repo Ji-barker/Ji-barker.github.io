@@ -107,13 +107,16 @@ table, tr, td {
         width: 100%;
     }
     body{
+      margin: 0 auto;
+      display: block;
       font-size: small;
     }
     table{
       margin-left: 6px;
+      padding: 6px;
     }
     .card{
-      margin: 5px;
+      padding: 5px;
     }
 
 
