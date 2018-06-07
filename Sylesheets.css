@@ -108,9 +108,11 @@ table, tr, td {
     }
     body{
       padding: 5px;
+      font-size: small;
     }
     table{
       padding: 6px;
     }
+
 
 }
