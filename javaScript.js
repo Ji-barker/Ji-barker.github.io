@@ -59,6 +59,7 @@ function decimal_checker() {
     var list_numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
     var i;
     var counter = 0;
+    window.alert("YES into function")
     for (i = 0; i < binary_number.length; i++) {
         if (list_numbers.indexOf(decimal_number[i]) > -1) {
             if (decimal_number[i] === ".") {
