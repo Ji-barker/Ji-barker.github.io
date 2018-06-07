@@ -11,7 +11,7 @@ body {
 
 /* Header/Blog Title */
 .header {
-    padding: 10px;
+    padding: 7px;
     text-align: center;
     background: white;
 }
@@ -110,6 +110,7 @@ table, tr, td {
       margin: 0 auto;
       display: block;
       font-size: small;
+      width: 100%;
     }
     table{
       margin-left: 6px;
