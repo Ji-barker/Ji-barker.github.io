@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <!--This import the css and javascript files-->
       <script src="javaScript.js"></script>
       <link rel="stylesheet" type="text/css" href="Sylesheets.css">
       <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -9,8 +10,8 @@
       <title>Project</title>
   </head>
   <body>
-
-    <div class="header">
+    <!--The head of the page with the heading-->
+    <div class="header" name="top">
       <h1>Binary converter</h1>
     </div>
     <!--this is the links at top of page-->
@@ -20,28 +21,30 @@
       <a href="#">Base converter</a>
       <a href="#" style="float:right">Contact</a>
     </div>
-
+    <!--Row is the body of the website-->
     <div class="row">
-
+          <!--Card is the body broken up into smaller sections and this one is about converters-->
           <div class="card">
+              <!--Column is where the converters are located-->
               <div class="column">
                   <p class="heading">Binary to decimal</p>
                   <h5>Enter binary number(eg.1010.101, no spaces, no letters)</h5>
                   <div id="bin_to_dec_body">
                       <p><input type="text" id="num1"></p>
-                      <button type="button" onclick="converter()">converter</button>
+                      <button type="button" onclick="binary_checker()">converter</button>
                       <p id="yeah"></p>
                   </div>
                   <p class="heading">Decimal to binary</h2>
                   <h5>Enter a decimal number</h5>
                   <div id="dec_to_bin_body">
                       <p><input title="num2" type="text" id="num2"></p>
-                      <button type="button" onclick="converter1()">Converter</button>
+                      <button type="button" onclick="decimal_checker()">Converter</button>
                       <p id="output2"></p>
                   </div>
               </div>
 
           </div>
+          <!--This card is about explaining how to convert manually-->
           <div class="card">
               <h2>How to convert binary to decimal</h2>
               <p>All binary numbers have positionings meaning the whole binary number is broken up into individual numbers but with whole binary numbers, the positionings go from right to left instead of left to right starting at zero with decimal.</p>
@@ -387,7 +390,7 @@
         <li><a href="#">Base converter</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-
+      <a href="#top" style="float:right">Go back to top of page</a>
     </div>
 
   </body>

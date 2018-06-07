@@ -1,5 +1,5 @@
 
-function converter() {
+function binary_checker() {
     var binary_number = document.getElementById("num1").value;
     var index = 0;
     var number_index = 0;
@@ -8,7 +8,6 @@ function converter() {
     var answer;
     var i ;
     //This loop will check whether binary number is vaild
-    //
     for (i = 0; i < binary_number.length; i++) {
       //checks whether the element is '1' or '0'
         if (binary_number[i] !== "1" && binary_number[i] !== "0"){
@@ -54,8 +53,8 @@ function neg_binary_to_decimal(binary_number) {
     }
     return decimal_number
 }
-
-function converter1() {
+//checks the validation of the decimal number
+function decimal_checker() {
     var binary_number = document.getElementById("num2").value;
     var list_numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
     var i;
