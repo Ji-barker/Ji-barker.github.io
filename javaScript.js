@@ -71,6 +71,7 @@ function decimal_checker() {
             break;
         }
     }
+    window.alert(counter)
     if (counter === 0 || counter === 1) {
         bin2dec()
     }
