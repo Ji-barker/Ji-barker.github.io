@@ -60,7 +60,7 @@ function decimal_checker() {
     var i;
     var counter = 0;
     window.alert("YES into function")
-    for (i = 0; i < binary_number.length; i++) {
+    for (i = 0; i < decimal_number.length; i++) {
         if (list_numbers.indexOf(decimal_number[i]) > -1) {
             if (decimal_number[i] === ".") {
                 counter += 1;
