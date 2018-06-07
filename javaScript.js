@@ -23,7 +23,7 @@ function binary_checker() {
     if (counter === 1){
         whole_number = binary_number.slice(0,index_decimal_point);
         fractional_number = binary_number.slice(index_decimal_point+1, binary_number.length);
-        answer = whole_binary_to_decimal(fractional_number) + fractional_binary_to_decimal(whole_number);
+        answer = whole_binary_to_decimal(whole_number) + fractional_binary_to_decimal(fractional_number);
         document.getElementById("yeah").innerHTML = answer;
     }
     //this is for if the binary number is a whole number
