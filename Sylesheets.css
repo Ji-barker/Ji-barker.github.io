@@ -99,9 +99,7 @@ table, tr, td {
   font-size: 18px;
   margin-left: 8px;
 }
-@-ms-viewport{
-  width: device-width;
-}
+
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 415px) {
     .topnav a {
@@ -112,7 +110,7 @@ table, tr, td {
       margin: 0 auto;
       display: block;
       font-size: small;
-      width: 100%;
+      width: device-width;
     }
     table{
       margin-left: 5px;
