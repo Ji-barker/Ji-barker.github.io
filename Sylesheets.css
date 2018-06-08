@@ -106,7 +106,7 @@ table, tr, td {
         float: none;
         width: 100%;
     }
-    body{
+    html, body{
       margin: 0 auto;
       display: block;
       font-size: small;
