@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <!--This import the css and javascript files-->
+
+      <script src="complement_convertor.js"></script>
+      <link rel="stylesheet" type="text/css" href="Sylesheets.css">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+      <meta name="viewport" content ="width=device-width, initial-scale=1, user-scalable=yes">
+      <title>Project</title>
+  </head>
+  <body>
+    <!--The head of the page with the heading-->
+    <div class="header" name="top">
+      <h1>One's & two's complement</h1>
+    </div>
+    <!--this is the links at top of page-->
+    <div class="topnav">
+      <a href="#">one's and two's complement</a>
+      <a href="#">Binary calculator</a>
+      <a href="#">Base converter</a>
+      <a href="#" style="float:right">Contact</a>
+    </div>
+    <!--Row is the body of the website-->
+    <div class="row">
+          <!--Card is the body broken up into smaller sections and this one is about converters-->
+          <div class="card">
+              <h2>One's complement</h2>
+              <!--Column is where the converters are located-->
+              <div class="column">
+                  <p class="heading">Binary to one's complement</p>
+                  <h5>Enter binary number(eg.1010.101, no spaces, no letters)</h5>
+                  <p><input type="text" id="num1"></p>
+                  <button type="button" onclick="binary_checker()">converter</button>
+                  <p id="yeah"></p>
+                  <p class="heading">One's complement to binary</p>
+                  <h5>Enter one's complement</h5>
+                  <p><input title="num2" type="text" id="num2"></p>
+                  <button type="button" onclick="one_complement()">Converter</button>
+                  <p id="output2"></p>
+              </div>
+
+
+          </div>
+          <!--This card is about explaining how to convert manually-->
+          <div class="card">
+
+          </div>
+
+    </div>
+  <!--This is the footer with links-->
+    <div class="footer">
+      <ul>
+        <li><a href="#">one's and two's complement</a></li>
+        <li><a href="#">Binary calculator</a></li>
+        <li><a href="#">Base converter</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="#top" style="float:right">Go back to top of page</a>
+    </div>
+
+  </body>
+</html>

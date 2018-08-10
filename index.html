@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <!--This import the css and javascript files-->
+      <script src="binary_convertor.js"></script>
+      <link rel="stylesheet" type="text/css" href="Sylesheets.css">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+      <meta name="viewport" content ="width=device-width, initial-scale=1, user-scalable=yes">
+      <title>Project</title>
+  </head>
+  <body>
+    <!--The head of the page with the heading-->
+    <div class="header" name="top">
+      <h1>Binary converter</h1>
+    </div>
+    <!--this is the links at top of page-->
+    <div class="topnav">
+      <a href="complement.html">one's and two's complement</a>
+      <a href="#">Binary calculator</a>
+      <a href="#">Base converter</a>
+      <a href="#" style="float:right">Contact</a>
+    </div>
+    <!--Row is the body of the website-->
+    <div class="row">
+          <!--Card is the body broken up into smaller sections and this one is about converters-->
+          <div class="card">
+              <!--Column is where the converters are located-->
+              <div class="column">
+                  <p class="heading">Binary to decimal</p>
+                  <h5>Enter binary number(eg.1010.101, no spaces, no letters)</h5>
+                  <div id="bin_to_dec_body">
+                      <p><input type="text" id="num1"></p>
+                      <button type="button" onclick="binary_checker()">converter</button>
+                      <p id="yeah"></p>
+                  </div>
+                  <p class="heading">Decimal to binary</p>
+                  <h5>Enter a decimal number</h5>
+                  <div id="dec_to_bin_body">
+                      <p><input title="num2" type="text" id="num2"></p>
+                      <button type="button" onclick="decimal_checker()">Converter</button>
+                      <p id="output2"></p>
+                  </div>
+              </div>
+
+          </div>
+          <!--This card is about explaining how to convert manually-->
+          <div class="card">
+              <h2>How to convert binary to decimal</h2>
+              <p>All binary numbers have positionings, meaning the whole binary number is broken up into individual numbers but with whole binary numbers, the positionings go from right to left instead of left to right starting at zero with decimal.</p>
+              <p>To convert a whole binary number to a decimal</p>
+              <ol>
+                <li>2 is powered by the positioning then times by that binary value.</li>
+                <li>Move to the next binary position and its value and repeat the first process adding together each time</li>
+                <li>Repeat until been though each element in the binary number. </li>
+              </ol>
+              <P>For example converting 1010 to decimal</p>
+              <table>
+                <tr>
+                  <td>position</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>binary number</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+
+              </table>
+
+              <p><span class="bold">Step one</span><br>2 to the power of the position of last binary number times by the binary number position value. The position is 3 and the binary value is 1. So it would look like (2^3 * 1) this is the binary number 1000 into decimal. So far our equation is (2^3 * 1) = 1000</p>
+              <table>
+                <tr>
+                  <td>position</td>
+                  <td class="yellow">3</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>binary number</td>
+                  <td class="yellow">1</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+
+              </table>
+              <p><span class="bold">Step two</span><br>Repeat step one but with the next binary number position and its value, which the position being 2 and the binary number position value being 0. So it should look like (2^2 * 0) this is the binary number of 000 to decimal. Our equation is (2^3 * 1) + (2^2*0)= 1000</p>
+              <table>
+                <tr>
+                  <td>position</td>
+                  <td>3</td>
+                  <td class="yellow">2</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>binary number</td>
+                  <td>1</td>
+                  <td class="yellow">0</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+
+              </table>
+              <p><span class="bold">Step three</span><br>The position being 1 and its value being 1 should look like this, (2^1 * 1) this is the binary number of 10 into decimal. Our equation is (2^3 * 1) + (2^2 * 0) + (2^1 * 1) = 1010</p>
+              <table>
+                <tr>
+                  <td>position</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td class="yellow">1</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>binary number</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td class="yellow">1</td>
+                  <td>0</td>
+                </tr>
+
+              </table>
+              <p><span class="bold">Step four</span><br>
+              The position being 0 and its value being 0 should look like this, (2^0 * 0) this is the binary number of 0 into decimal. Our equation is (2^3 * 1) + (2^2 * 0) + (2^1 * 1) + (2^0 * 1) = 1010</p>
+              <table>
+                <tr>
+                  <td>position</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td class="yellow">0</td>
+                </tr>
+                <tr>
+                  <td>binary number</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td class="yellow">0</td>
+                </tr>
+
+              </table>
+              <p><span class="bold">Step five</span><br>
+              The final equation should look like this; (2^3 * 1) + (2^2 * 0) + (2^1 * 1) + (2^0* 0) which equals 10. This can check this with the converter up above. </p>
+
+              <h2>How to convert fractional binary to decimal</h2>
+              <p>This process is much similar to converting positive binary to decimal with only one difference, that the positioning goes to right to left and starts at 1 instead of 0 also instead of timesing 2 to the power of the position and the position value, we times the binary position value by 1 divide by 2 to the power of the position number. </p>
+              <p>For example, converting .1001 to decimal</p>
+              <table>
+                  <tr>
+                    <td>position</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>binary number</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                  </tr>
+
+              </table>
+              <p><span class="bold">Step one</span><br>2 to the power of the position of last binary number divided by the binary number position value. The position is 1 and the binary value is 1. So it would look like (1*1/2^1) this is the binary number 0.1 into decimal.</p>
+              <table>
+                  <tr>
+                    <td>position</td>
+                    <td class="yellow">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>binary number</td>
+                    <td class="yellow">1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                  </tr>
+
+              </table>
+              <p><span class="bold">Step two</span><br>Repeat step one but with the next binary number position and its value, which the position being 2 and the binary number position value being 0. So it should look like (0*1/2^2) this is the binary number of 0.00 into decimal.</p>
+              <table>
+                  <tr>
+                    <td>position</td>
+                    <td>1</td>
+                    <td class="yellow">2</td>
+                    <td>3</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>binary number</td>
+                    <td>1</td>
+                    <td class="yellow">0</td>
+                    <td>1</td>
+                    <td>0</td>
+                  </tr>
+              </table>
+              <p><span class="bold">Step three</span><br>The position being 3 and its value being 3 should look like this, (0*1/2^3) this is the binary number of 0.000 into decimal.</p>
+              <table>
+                  <tr>
+                    <td>position</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class="yellow">3</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>binary number</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class="yellow">1</td>
+                    <td>0</td>
+                  </tr>
+              </table>
+              <p><span class="bold">Step four</span><br>The position being 4 and its value being 1 should look like this, (1*1/2^4) this is the binary number of 0.0001 into decimal.</p>
+              <table>
+                  <tr>
+                    <td>position</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td class="yellow">4</td>
+                  </tr>
+                  <tr>
+                    <td>binary number</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td class="yellow">0</td>
+                  </tr>
+              </table>
+              <h2>How to convert positive decimal to binary</h2>
+              <ol>
+                  <li>First divide the decimal number by 2</li>
+                  <li>The quotient becomes that answer</li>
+                  <li>If the quotient ends with .5 put down 1, if not a 0</li>
+                  <li>Move the integer quotient to first column without the decimal side</li>
+                  <li>Repeat steps 1 - 4 until the quotient equals 0</li>
+                  <li>Once finished the binary number is the remainders starting at the bottom</li>
+              </ol>
+              <table>
+                <tr>
+                  <td>Division by 2</td>
+                  <td>Quotient</td>
+                  <td>Remainder</td>
+                </tr>
+                <tr>
+                  <td>12/2</td>
+                  <td>6</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>6/2</td>
+                  <td>3</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>3/2</td>
+                  <td>1.5</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>1/2</td>
+                  <td>0.5</td>
+                  <td>1</td>
+                </tr>
+              </table>
+              <p>The binary number is 1100, this can check this with the converter above</p>
+              <h2>How to convert fractional decimal to binary</h2>
+              <p>This much similar to converting whole decimal to binary but with a slight difference, that instead of dividing by two we times by two and we collect the whole number instead of the remainder.</p>
+              <ol>
+                <li>First times the decimal number by 2</li>
+                <li>The quotient becomes that answer</li>
+                <li>Write the whole number under whole number</li>
+                <li>Move the quotient to first column and if the quotient is >= 1 minus one to the quotient</li>
+                <li>Repeat steps 1 - 4 until the quotient equals 0</li>
+                <li>Once finished the binary number is the whole numbers starting from the bottom</li>
+              </ol>
+              <table>
+                <tr>
+                  <td>Division by 2</td>
+                  <td>Quotient</td>
+                  <td>Whole number</td>
+                </tr>
+                <tr>
+                  <td>0.625*2</td>
+                  <td>1.25</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>0.25*2</td>
+                  <td>0.5</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0.5*2</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>0*2</td>
+                  <td>0</td>
+                  <td></td>
+                </tr>
+              </table>
+              <p>The binary number is .101</p>
+              <p>However this works for only non infinite binary number. Here is how to convert when the binary number will be infinite </p>
+              <ol>
+                <li>First times the decimal number by 2</li>
+                <li>The quotient becomes that answer</li>
+                <li>Write the whole number under whole number</li>
+                <li>Move the quotient to first column and if the quotient is >= 1 minus one to the quotient</li>
+                <li>Repeat steps 1 - 4 until a repetition is found in the Quotient numbers.</li>
+                <li>Once finished the binary number is the whole numbers starting from the top to bottom, write brackets around the repeating binary numbers to indicate a repetition. </li>
+              </ol>
+              <table>
+                <tr>
+                  <td>Division by 2</td>
+                  <td>Quotient</td>
+                  <td>Whole number</td>
+                </tr>
+                <tr>
+                  <td>0.1*2</td>
+                  <td>0.2</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0.2*2</td>
+                  <td class="yellow">0.4</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0.4*2</td>
+                  <td class="yellow">0.8</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0.8*2</td>
+                  <td class="yellow">1.6</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>0.6*2</td>
+                  <td class="yellow">1.2</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>0.2*2</td>
+                  <td class="blue">0.4</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0.4*2</td>
+                  <td class="blue">0.8</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0.8*2</td>
+                  <td class="blue">1.6</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>0.6*2</td>
+                  <td class="blue">1.2</td>
+                  <td>1</td>
+                </tr>
+              </table>
+              <p>The binary number is 0.0(0011), I haven’t yet made the program to do this. It is planned for future development.</p>
+
+
+
+
+          </div>
+
+    </div>
+  <!--This is the footer with links-->
+    <div class="footer">
+      <ul>
+        <li><a href="#">one's and two's complement</a></li>
+        <li><a href="#">Binary calculator</a></li>
+        <li><a href="#">Base converter</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="#top" style="float:right">Go back to top of page</a>
+    </div>
+
+  </body>
+</html>
